@@ -12,9 +12,9 @@ function Tree({
 }: {
     data: Array<TreeProps>,
     indent?: number,
-    onCreate?: (parentId: string, ...args: any) => void | null,
-    onDelete?: (id: string, ...args: any) => void | null
-    onChange?: (id: string, ...args: any) => void | null
+    onCreate?: (parentId: string) => void | null,
+    onDelete?: (id: string) => void | null
+    onChange?: (id: string, value: string | null) => void | null
 }) {
 
     const onChangeHandler = useCallback((id: string, value: string | null) => {
