@@ -1,0 +1,39 @@
+.tree-item {
+    font-size: 14pt;
+    display: flex;
+    padding: 5pt;
+    margin-bottom: 10pt;
+    border-radius: 10pt;
+    align-items: center;
+}
+
+.tree-item span button svg {}
+
+.tree-item span button svg line {
+    stroke: rgb(22, 22, 22);
+}
+
+.tree-item div:first-child {
+    width: 15pt;
+    padding: 0 5pt 0 5pt;
+}
+
+.tree-item:hover {
+    background-color: #f0f0f0;
+}
+
+.tree-item button {
+    width: 20pt;
+    height: 20pt;
+    border-radius: 50%;
+    padding: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree-item-title {
+    padding-left: 5pt;
+    width: 100%;
+}
