@@ -8,7 +8,7 @@ export function useTreeActions(structure: Array<TreeProps>):
         (id: string) => void,
         (id: string, value: string | null) => void,
         Array<TreeProps>,
-        React.Dispatch<React.SetStateAction<any>>
+        React.Dispatch<React.SetStateAction<TreeProps[]>>
     ] {
     const [structureData, setStructureData] = useState(structure)
 
@@ -23,7 +23,7 @@ export function useTreeActions(structure: Array<TreeProps>):
             return
         }
 
-        let tempStructureData = structuredClone(structureData)
+        const tempStructureData = structuredClone(structureData)
 
         forEachNode(tempStructureData, (node: TreeProps) => {
             if (node.id === parentId) {
@@ -41,7 +41,7 @@ export function useTreeActions(structure: Array<TreeProps>):
     }
 
     const onChange = (id: string, value: string | null) => {
-        let tempStructureData = structuredClone(structureData)
+        const tempStructureData = structuredClone(structureData)
 
         forEachNode(tempStructureData, (node: TreeProps) => {
             if (node.id === id) {
@@ -54,7 +54,7 @@ export function useTreeActions(structure: Array<TreeProps>):
     }
 
     const onDelete = (id: string) => {
-        let tempStructureData = structuredClone(structureData)
+        const tempStructureData = structuredClone(structureData)
         console.log(tempStructureData)
         forEachNode(tempStructureData, (node: TreeProps | undefined | null, parentArray) => {
             if (!node) return
