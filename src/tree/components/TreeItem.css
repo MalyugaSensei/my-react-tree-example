@@ -7,15 +7,12 @@
     align-items: center;
 }
 
-.tree-item span button svg {}
-
 .tree-item span button svg line {
     stroke: rgb(22, 22, 22);
 }
 
 .tree-item div:first-child {
-    width: 15pt;
-    padding: 0 5pt 0 5pt;
+    min-width: 20pt;
 }
 
 .tree-item:hover {
@@ -35,5 +32,8 @@
 
 .tree-item-title {
     padding-left: 5pt;
+    margin: 0 5pt;
     width: 100%;
+    border: 0;
+    background-color: transparent;
 }
