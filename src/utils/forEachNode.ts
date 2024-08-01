@@ -6,10 +6,10 @@ export const forEachNode = function (
 ): void | boolean {
     if (!data) return
     data.forEach((n: TreeProps) => {
-        let result = callback(n, data)
+        const result = callback(n, data)
         if (result) return result
         if (n.children.length !== 0) {
-            let childrenResult = forEachNode(n.children, callback)
+            const childrenResult = forEachNode(n.children, callback)
             if (childrenResult) return childrenResult
         }
     })
