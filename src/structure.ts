@@ -1,61 +1,61 @@
-import { TreeProps } from "./tree/components/Tree"
+import { TreeProps } from "./tree/components/"
 
 const structure: Array<TreeProps> = [
     {
         "id": "1",
-        "title": "BMW",
+        "title": "ГАЗ",
         "children": [
             {
                 "id": "1-1",
-                "title": "X5",
+                "title": "24",
                 "children": [
                     {
                         "id": "1-1-1",
-                        "title": "X5",
+                        "title": "2410",
                         "children": []
                     },
                     {
                         "id": "1-1-2",
-                        "title": "X6",
+                        "title": "2424",
                         "children": []
                     }
                 ]
             },
             {
                 "id": "1-2",
-                "title": "X6",
+                "title": "3110",
                 "children": []
             }
         ]
     },
     {
         "id": "2",
-        "title": "Audi",
+        "title": "ЛАДА",
         "children": [
             {
                 "id": "2-1",
-                "title": "A5",
+                "title": "2101",
                 "children": []
             },
             {
                 "id": "2-2",
-                "title": "A6",
+                "title": "2105",
                 "children": []
             }
         ]
     },
     {
         "id": "3",
-        "title": "Mercedes",
+        "title": "УАЗ",
         "children": [
             {
                 "id": "3-1",
-                "title": "C-class",
+                "title": "Буханка",
                 "children": []
             },
             {
                 "id": "3-2",
-                "title": "E-class",
+                "title": "Патриот",
                 "children": []
             }
         ]
